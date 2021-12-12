@@ -10,10 +10,7 @@
 }
 .filter__button {
   padding: 6px 22px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(16px, 500, 1.62, 0.03em);
   text-align: center;
   color: var(--title-color);
   background-color: var(--other-background-color);
@@ -29,10 +26,7 @@
 
   &:hover,
   &:focus {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
+    // @include font(16px, 500, 1.62, 0.03em);
     text-align: center;
     color: var(--main-title-color);
     background-color: var(--accent-color);
