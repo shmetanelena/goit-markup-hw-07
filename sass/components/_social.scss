@@ -28,7 +28,7 @@
   }
 }
 
-.icon-social {
+.social__icon {
   width: 20px;
   height: 20px;
   fill: var(--icon);
@@ -38,8 +38,23 @@
 
   /* ОДНОВРЕМЕННО при наведении
 Меняет социальную сеть и кружочек ссылки  */
-  .social-icon-link:hover &,
-  .social-icon-link:focus & {
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--main-title-color);
+  }
+}
+.footer__social {
+  margin-left: 70px;
+}
+.footer {
+  .social__item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+}
+
+.footer {
+  .social__icon {
     fill: var(--main-title-color);
   }
 }

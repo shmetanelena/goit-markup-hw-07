@@ -163,7 +163,7 @@ body {
   fill: var(--main-title-color);
 }
 
-.icon-social {
+.social__icon {
   width: 20px;
   height: 20px;
   fill: var(--icon);
@@ -172,8 +172,21 @@ body {
 Меняет социальную сеть и кружочек ссылки  */
 }
 
-.social-icon-link:hover .icon-social,
-.social-icon-link:focus .icon-social {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--main-title-color);
+}
+
+.footer__social {
+  margin-left: 70px;
+}
+
+.footer .social__item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer .social__icon {
   fill: var(--main-title-color);
 }
 
@@ -972,18 +985,5 @@ flex-элементов —  в одну строку или в нескольк
   line-height: 1.14;
   color: var(--main-title-color);
   text-transform: uppercase;
-}
-
-.footer__social {
-  margin-left: 70px;
-}
-
-.footer .social-icon-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-
-.footer .icon-social {
-  fill: var(--main-title-color);
 }
 /*# sourceMappingURL=main.css.map */
