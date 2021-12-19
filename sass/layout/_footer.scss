@@ -12,6 +12,8 @@
 }
 
 .footer__addr-link {
+  // text-decoration: none;
+  font-style: normal;
   @include font(14px, 400, 1.71, 0.03em);
   color: var(--main-title-color);
 

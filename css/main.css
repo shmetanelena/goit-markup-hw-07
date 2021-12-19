@@ -87,6 +87,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -121,7 +122,7 @@ body {
   background-color: var(--other-background-color);
 }
 
-.title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
   min-height: 42px;
@@ -140,12 +141,8 @@ body {
   align-items: center;
 }
 
-.social__item {
+.social__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.social__item:nth-child(4n) {
-  margin-right: 0;
 }
 
 .social__link {
@@ -208,6 +205,7 @@ body {
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -215,9 +213,10 @@ body {
 }
 
 .subscribe__form-input::placeholder {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
 }
@@ -324,6 +323,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
+  letter-spacing: 0.03em;
   color: var(--title-color);
 }
 
@@ -380,9 +380,7 @@ body {
   height: 120px;
   resize: none;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  font-size: 14px;
+  font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--title-color);
@@ -390,8 +388,8 @@ body {
 }
 
 .modal__form-text::placeholder {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -404,11 +402,11 @@ body {
 .modal__label-text {
   margin-bottom: 4px;
   display: block;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
-  color: #757575;
   letter-spacing: 0.01em;
+  color: #757575;
 }
 
 /* ЧЕКБОКС */
@@ -422,8 +420,9 @@ body {
   margin-bottom: 30px;
   align-items: center;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
-  justify-content: center;
+  letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--text-color);
 }
@@ -471,7 +470,7 @@ body {
 }
 
 /* Выровняли в ряд по центру*/
-.filter__list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -498,10 +497,6 @@ body {
 }
 
 .filter__button:hover, .filter__button:focus {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-title-color);
   background-color: var(--accent-color);
@@ -590,7 +585,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  font-style: normal;
   letter-spacing: 0.02em;
   color: var(--text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -639,8 +633,8 @@ body {
   width: 696px;
   height: 120px;
   margin: 0 auto 30px auto;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -680,11 +674,10 @@ body {
 
 .benefits__item {
   width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
 }
 
-.benefits__item:nth-child(4) {
-  margin: 0;
+.benefits__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Антена, часы, диаграмма,  Космонавт*/
@@ -707,9 +700,9 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
   width: 270px;
-  font-size: 14px;
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -720,6 +713,7 @@ body {
 
 .benefits__text {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
@@ -733,19 +727,17 @@ body {
 
 .work__item {
   width: calc((100% - 30px * 2) / 3);
-  margin-right: 30px;
   position: relative;
 }
 
-.work__item:nth-child(3n) {
-  margin: 0;
+.work__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work__subtitle {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -770,14 +762,13 @@ body {
 
 .employees__item {
   width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
   background-color: var(--main-title-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.employees__item:nth-child(4n) {
-  margin-right: 0;
+.employees__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .employees__name {
@@ -793,6 +784,7 @@ body {
 .employees__position {
   margin-bottom: 16px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -891,8 +883,8 @@ flex-элементов —  в одну строку или в нескольк
 }
 
 .cards__text {
-  /* width: 322px; */
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -906,7 +898,7 @@ flex-элементов —  в одну строку или в нескольк
 }
 
 /*Скрыли выезжающую карточку  */
-.cards__picture {
+.cards__box {
   position: relative;
   overflow: hidden;
 }
@@ -928,7 +920,9 @@ flex-элементов —  в одну строку или в нескольк
 
 .cards__overlay-text {
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
   padding: 0 24px;
 }
@@ -944,8 +938,9 @@ flex-элементов —  в одну строку или в нескольк
 }
 
 .footer__addr-link {
-  font-size: 14px;
   font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
@@ -959,7 +954,7 @@ flex-элементов —  в одну строку или в нескольк
 .footer__mail-link,
 .footer__phone-link {
   font-size: 14px;
-  font-style: normal;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -983,9 +978,10 @@ flex-элементов —  в одну строку или в нескольк
 
 .footer__text {
   margin-bottom: 20px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--main-title-color);
   text-transform: uppercase;
 }

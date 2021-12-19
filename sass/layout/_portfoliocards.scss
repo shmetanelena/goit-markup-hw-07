@@ -56,7 +56,7 @@ flex-элементов —  в одну строку или в нескольк
   border-bottom: 1px solid var(--cards-border);
 }
 /*Скрыли выезжающую карточку  */
-.cards__picture {
+.cards__box {
   position: relative;
   overflow: hidden;
 }

@@ -1,7 +1,7 @@
 .modal__title {
   margin-bottom: 12px;
   text-align: center;
-  @include font(20px, 700, 1.15);
+  @include font(20px, 700, 1.15, 0.03em);
   color: var(--title-color);
 }
 .modal__field {

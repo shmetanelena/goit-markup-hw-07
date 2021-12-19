@@ -5,10 +5,12 @@
   align-items: center;
 }
 .social__item {
-  margin-right: 10px;
-  &:nth-child(4n) {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
   }
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
 }
 .social__link {
   display: flex;
